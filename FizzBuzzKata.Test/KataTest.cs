@@ -13,11 +13,12 @@ namespace FizzBuzzKata.Test
         }
 
         [TestMethod]
-        public void CanPassZero()
+        public void CanPassOne()
         {
             var fizzBuzz = new FizzBuzz();
-            string actual = fizzBuzz.Run(0);
-            string expected = "0";
+            // CHANGESET NOTE: I messed it up and sent 0 at the beggining should've been one!
+            string actual = fizzBuzz.Run(1);
+            string expected = "1";
 
             Assert.AreEqual(actual, expected);
         }
