@@ -7,8 +7,9 @@ namespace FizzBuzzKata.Test
     public class KataTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CanInitializeFizzBuzz()
         {
+            var fizzBuzz = new FizzBuzz();
         }
     }
 }
