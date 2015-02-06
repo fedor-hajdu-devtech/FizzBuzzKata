@@ -11,5 +11,15 @@ namespace FizzBuzzKata.Test
         {
             var fizzBuzz = new FizzBuzz();
         }
+
+        [TestMethod]
+        public void CanPassZero()
+        {
+            var fizzBuzz = new FizzBuzz();
+            string actual = fizzBuzz.Run(0);
+            string expected = "0";
+
+            Assert.AreEqual(actual, expected);
+        }
     }
 }
