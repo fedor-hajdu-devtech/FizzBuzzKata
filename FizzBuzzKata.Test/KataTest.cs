@@ -21,5 +21,16 @@ namespace FizzBuzzKata.Test
 
             Assert.AreEqual(actual, expected);
         }
+
+        [TestMethod]
+        public void ReturnsFizzForThree()
+        {
+            var fizzBuzz = new FizzBuzz();
+            string actual = fizzBuzz.Run(3);
+            string expected = "Fizz";
+
+            Assert.AreEqual(actual, expected);
+        }
+
     }
 }
