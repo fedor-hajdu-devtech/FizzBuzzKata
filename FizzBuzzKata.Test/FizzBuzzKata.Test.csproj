@@ -53,6 +53,12 @@
     <Compile Include="KataTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FizzBuzzKata\FizzBuzzKata.csproj">
+      <Project>{934c36bf-9e88-4255-8cde-fd875a8efa1c}</Project>
+      <Name>FizzBuzzKata</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
